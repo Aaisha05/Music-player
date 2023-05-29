@@ -1,0 +1,166 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@1,300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Ubuntu:ital,wght@1,300&family=Varela+Round&display=swap');
+
+body{
+    background-color: rgb(45, 44, 44);
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+
+
+
+
+
+nav{
+    font-family: sans-serif;
+}
+
+/*ul felx box */
+nav ul{
+    display: flex; /*makes all the items horizontla*/
+    align-items: center;
+    list-style-type:none;
+    height:65px;
+    background-color: black;
+    color: white; /*for spotify brand class*/
+}
+
+/*to create space separation between the written components*/
+nav ul li{
+    padding: 0 12px;
+}
+
+
+
+
+
+/*image alterations*/
+.brand img{
+    width:44px;
+    padding: 0 8px; /*use padding to create separation*/
+
+}
+
+.brand {
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.3rem;
+}
+
+
+
+
+
+
+.container{
+    min-height: 60vh; /*so that the bottom class actually moves down*/
+    background-color: black;
+    color: white;
+    font-family: sans-serif ;
+    display: flex;
+    width:70%;
+    margin:23px auto; /*so that it comes in center*/
+    border-radius: 12px;
+    padding:34px;
+    background-image: url('bgbgg.png');
+  
+  
+    
+}
+
+
+/*to bring the bottom class down*/
+.bottom{
+    position: sticky;
+    height: 130px;
+    background-color: black;
+    color:white; /*to make the contents in the black box white*/
+    bottom: 0;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /*brings the components below the progressbar*/
+
+}
+
+
+
+
+
+
+.icons{
+    margin-top: 14px; /*cretaes spacing for icons*/
+}
+.icons i{
+    cursor: pointer;
+}
+
+
+
+
+
+
+#myProgressBar{
+    width:80vw;
+    cursor: pointer;
+}
+
+
+
+
+.songItemContainer{
+    margin-top: 80px;
+
+}
+
+
+.songItem{
+    height:50px;
+    display:flex;
+    background-color: white;
+    color:black;
+    margin: 12px 0;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 34px;
+
+}
+
+.songItem img{
+    width:43px;
+    margin: 0 23px; 
+    border-radius: 34px;
+}
+
+
+
+
+
+.timestamp{
+    margin: 0 23px;
+}
+
+.timestamp i{
+    cursor:pointer;
+}
+
+
+
+
+.songInfo{
+    position: absolute;
+    left:10vw;
+    font-family: sans-serif;
+}
+
+.songInfo img{
+    opacity:0;
+    transition: opacity 0.4s ease-in;
+
+}
